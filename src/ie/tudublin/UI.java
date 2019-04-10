@@ -22,17 +22,17 @@ public class UI extends PApplet
 		print(colours);
 	}
 
-	public Color findColor(int value)
-	{
+	// public Color findColor(int value)
+	// {
 		
-	}
+	// }
 
 	/**
 	 * @return the colours
 	 */
 	public ArrayList<Colour> printColours() {
 		for( int i = 0; i < colours.size(); i++){
-			println(colours(i));
+			//println(colours(i));
 			printArray(colours);
 		}
 		return colours;
@@ -50,6 +50,7 @@ public class UI extends PApplet
 
 	public void separate(int value)
 	{
+	
 		int hundreds = (value / 100);
 		int tens = (value - (hundreds * 100)) / 10;
 		int ones = value - ((hundreds * 100)  + (tens * 10));
