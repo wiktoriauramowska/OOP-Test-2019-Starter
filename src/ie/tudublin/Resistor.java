@@ -13,7 +13,7 @@ public class Resistor extends UI
     int tens;
     int hundreds;
     
-    public Resistor(int value, int ones, int tens, int hundreds){
+    public Resistor(TableRow row){
         this.value = value;
         this.ones = ones;
         this.tens = tens;
