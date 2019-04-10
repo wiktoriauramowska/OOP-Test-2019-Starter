@@ -19,11 +19,25 @@ public class Colour extends PApplet
     public Colour(TableRow row)
     {
         this.r = row.getInt("r");
-        g = row.getInt("g");
-        b = row.getInt("b");
-        value = row.getInt("Value");
-        colour = row.getString("Colour");
+        this.g = row.getInt("g");
+        this.b = row.getInt("b");
+        this.value = row.getInt("Value");
+        this.colour = row.getString("Colour");
         
+    }
+
+    /**
+     * @return the colour
+     */
+    private String getColour() {
+        return colour;
+    }
+
+    /**
+     * @param colour the colour to set
+     */
+    public void setColour(String colour) {
+        this.colour = colour;
     }
 
 
