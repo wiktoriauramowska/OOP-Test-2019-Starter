@@ -14,7 +14,7 @@ public class UI extends PApplet
 	ArrayList<Resistor> resistors = new ArrayList<Resistor>();
 	
 	
-	public void loadColours()
+	void loadColours()
 	{
 		Table table = loadTable("colours.csv", "header");
 		for(TableRow row:table.rows()){
@@ -23,9 +23,9 @@ public class UI extends PApplet
 		print(colours);
 	}
 
-	public void loadResistors()
+	void loadResistors()
 	{
-		Table table = loadTable("resistors.csv", "header");
+		Table table = loadTable("resistors.csv");
 		for(TableRow row:table.rows()){
 			resistors.add(new Resistor(row));
 		}
@@ -79,10 +79,29 @@ public class UI extends PApplet
 
 	public void setup() 
 	{
+		loadColours();
+		loadResistors();
+		
 	}
 	
 	public void draw()
-	{			
+	{	
+		noFill();
+		line(200, 100, 100, 100);
+		line(300, 100, 400, 100);
+		rect(200, 50, 100, 100);
+		line(200, 270, 100, 270);
+		line(300, 270, 400, 270);
+		rect(200, 220, 100, 100);
+		line(200, 420, 100, 420);
+		line(300, 420, 400, 420);
+		rect(200, 370, 100, 100);
+		line(200, 570, 100, 570);
+		line(300, 570, 400, 570);
+		rect(200, 520, 100, 100);
+		
+		
+			
 	}
 
 	

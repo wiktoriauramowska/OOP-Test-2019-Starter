@@ -21,8 +21,8 @@ public class Colour extends UI
         this.r = row.getInt("r");
         this.g = row.getInt("g");
         this.b = row.getInt("b");
-        this.value = row.getInt("Value");
-        this.colour = row.getString("Colour");
+        this.value = row.getInt("value");
+        this.colour = row.getString("colour");
         
     }
 

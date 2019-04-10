@@ -18,5 +18,8 @@ public class Resistor extends UI
         this.ones = ones;
         this.tens = tens;
         this.hundreds = hundreds;
+        for(int i = 0; i < resistors.size(); i ++){   
+            
+        }
     }
 }
