@@ -6,7 +6,7 @@ import processing.data.Table;
 import processing.data.TableRow;
 
 
-public class Colour extends PApplet
+public class Colour extends UI
 
 {
     
@@ -14,7 +14,7 @@ public class Colour extends PApplet
     int g;
     int b;
     int value;
-    private String colour;
+    String colour;
     
     public Colour(TableRow row)
     {
@@ -41,12 +41,7 @@ public class Colour extends PApplet
     }
 
 
-    // public void loadColours(){
-    //     Table table = loadTable("colours.csv", "header");
-    //     System.out.println("test");
-
-        
-    // }
+    
 
 
 
